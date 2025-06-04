@@ -33,7 +33,7 @@
 
 ## 📸 Preview
 
-![Preview](/Github%20Preview.png)
+![Preview](./public/Github%20Preview.png)
 
 ---
 
