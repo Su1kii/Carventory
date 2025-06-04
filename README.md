@@ -33,11 +33,7 @@
 
 ## 📸 Preview
 
-| 💡 Light Mode | 🌙 Dark Mode |
-|---------------|-------------|
-| ![light](./public/demo-light.png) | ![dark](./public/demo-dark.png) |
-
-> *Click on any car to view its details.*
+![Preview](/Github%20Preview.png)
 
 ---
 
