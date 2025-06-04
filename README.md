@@ -41,6 +41,18 @@
 
 ---
 
+📌 Purpose
+This project was built to demonstrate:
+My understanding of modern full-stack development
+My ability to create beautiful, responsive, and functional UIs
+Experience with authentication, ORM, and cloud-based databases
+
+Real-world CRUD functionality in a clean UI
+
+🔗 Live Demo
+👉 [carventory.vercel.app](https://carventory.vercel.app/)
+
+
 ## 🛠️ Running Locally
 
 ```bash
@@ -58,13 +70,3 @@ DATABASE_URL=your_neon_postgres_url
 
 # Run locally
 npm run dev
-📌 Purpose
-This project was built to demonstrate:
-My understanding of modern full-stack development
-My ability to create beautiful, responsive, and functional UIs
-Experience with authentication, ORM, and cloud-based databases
-
-Real-world CRUD functionality in a clean UI
-
-🔗 Live Demo
-👉 [carventory.vercel.app](https://carventory.vercel.app/)
