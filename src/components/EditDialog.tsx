@@ -11,7 +11,7 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 import { Button } from "@/components/ui/button";
-import { EditIcon } from "lucide-react";
+import { EditIcon, Trash2 } from "lucide-react";
 import { Combobox } from "./ui/combo-box";
 import { Label } from "./ui/label";
 import { Input } from "./ui/input";
@@ -47,7 +47,6 @@ export default function EditDialog({ car }: EditDialogProps) {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // Validate required fields
     if (
       !formData.make ||
       !formData.model ||
@@ -62,11 +61,10 @@ export default function EditDialog({ car }: EditDialogProps) {
     }
 
     try {
-      // Ensure data is trimmed and numbers are correctly handled
       const updatedCarData = {
         ...formData,
-        year: Number(formData.year), // Ensure year is a number
-        price: Number(formData.price), // Ensure price is a number
+        year: Number(formData.year),
+        price: Number(formData.price),
       };
 
       const updatedCar = await editCar(car.id, updatedCarData);
