@@ -176,6 +176,33 @@ export default function EditDialog({ car }: EditDialogProps) {
             onChange={(e) => handleChange("description", e.target.value)}
           />
 
+          {/* Image Upload */}
+          <Label>Car Image</Label>
+          {formData.imageUrl ? (
+            <div className="flex flex-col items-start gap-2">
+              <img
+                src={formData.imageUrl}
+                alt="Car"
+                className="w-full h-40 object-cover rounded-md"
+              />
+              <Button
+                type="button"
+                variant="outline"
+                onClick={() => setFormData({ ...formData, imageUrl: "" })}
+              >
+                <Trash2 className="w-4 h-4 mr-1" />
+                Remove Image
+              </Button>
+            </div>
+          ) : (
+            <ImageUpload
+              key="image-upload" // Force re-mounting when imageUrl becomes empty
+              value={formData.imageUrl ?? ""}
+              onChange={(url) => setFormData({ ...formData, imageUrl: url })}
+              endpoint="postImage"
+            />
+          )}
+
           <AlertDialogFooter>
             <AlertDialogCancel>Cancel</AlertDialogCancel>
             <AlertDialogAction type="submit">Submit</AlertDialogAction>
