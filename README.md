@@ -1,5 +1,9 @@
 # 🚗 Carventory
 
+## 📸 Preview
+
+![Preview](./public/Github%20Preview.png)
+
 **Carventory** is a full-stack car inventory management app where users can **add, edit, view, and delete** their vehicles. It showcases my abilities in full-stack development using modern technologies like **Next.js**, **TypeScript**, **Tailwind CSS**, and **Prisma** — backed by a Neon Postgres database and Stack Auth for authentication.
 
 ---
@@ -28,12 +32,6 @@
 | **Prisma**   | ORM for interacting with database |
 | **Neon**     | Serverless Postgres DB         |
 | **Stack Auth** | Secure authentication         |
-
----
-
-## 📸 Preview
-
-![Preview](./public/Github%20Preview.png)
 
 ---
 
